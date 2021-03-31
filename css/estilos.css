@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Coraline font;
+    src: url('../fonts/CoralineCat.ttf');
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #a5d3f7;
+}
+
+.indexHeader{
+    display:flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: flex-end;
+}
+
+.headerImage{
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+}
+
+.indexContent{
+    display:flex;
+    height: 80%;
+}
+
+.indexLeftContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    margin-left: 10%; 
+}
+.indexMenuNav{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 5vh;
+}
+.leftImage{
+    align-self: center;
+    height: 30%;
+    margin: auto;
+}
+.rightImage{
+    margin: auto;
+    height: 60%;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.indexButton{
+    font-family: 'Coraline font';
+    font-size: 3vh;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    color: #13284a;
+    margin: 0vh 2vh 2vw 2vw;
+}
+
+.indexButton:hover{
+    color: #395476;
+}
+
+.headerMenu{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.title{
+    font-family: 'Coraline font';
+    font-size: min(5vh,4vw);
+    height: 60%;
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 2.5%; 
+}
+
+.contentMenuNav{
+    display:flex;
+    flex-direction: row;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentButton{
+    color: #13284a;
+    font-family: 'Coraline font';
+    font-size: 2vh;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+
+    border-left: 1px solid #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.contentButton:hover{
+    background-color: #97C0E3;
+}
+.contentFinalButton{
+    border-right: 1px solid #000;
+}
+
+.contentSelectedButton{
+    border-bottom:1px solid #000;
+    background-color: #87c4f7;
+}
+a>img{
+    height: 90%;
+}
