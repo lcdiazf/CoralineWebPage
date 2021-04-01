@@ -12,9 +12,8 @@
 <body>
   <div class="header">
     <div class="headerMenu">
-      <h1 class="title">Personajes</h1>
       <nav class="contentMenuNav"><!-- la etiqueta <nav> agrupa los elementos del menu de navegación -->
-        <a class="contentButton" href="index.html" target="_self">
+        <a class="contentButton contentInitialButton" href="index.html" target="_self">
           <img src="images/home.svg"></a>
           <a class="contentButton" href="PinkPalace.html" target="_self">Pink Palace Apartments</a>
           <a class="contentButton contentSelectedButton" href="Characters.html" target="_self">Personajes</a>
@@ -23,14 +22,27 @@
           <a class="contentButton contentFinalButton" href="Information.html" target="_self">Información</a>
           <!-- cada botón tiene el mismo estilo botonMenu -->
         </nav>
+        <h1 class="title">Personajes</h1>
       </div>
 
       <img class="headerImage" src="images/Coraline.svg">
     </div>
+    <div class="characterList">
+      <ol>
+        <li><a href="#coraline"> Coraline Jones</a></li>
+        <li><a href="#parents">Mel y Charlie Jones</a></li>
+        <li><a href="#cat">El gato</a></li>
+        <li><a href="#wybie">Wyborn Lovat</a></li>
+        <li><a href="#bobinski">Señor Bobinski</a></li>
+        <li><a href="#spinkForcible">April Spink y Miriam Forcible</a></li>
+        <li><a href="#otherMom">La Otra Mamá</a></li>
+      </ol>
+    </div>
+
     <table class="twoColumnsContent">
       <tr>
         <td>
-          <h2>Coraline Jones</h2>
+          <h2 id="coraline">Coraline Jones</h2>
           <p>
             Es una niña aventurera y curiosa, de caracter fuerte y muy clara al expresarse. Se muda de Pontiac, Michigan al Pink Palace donde busca sin exito la atención de sus padres, que están siempre trabajando. Su mayor inconveniente es que la gente siempre confunde su nombre llamandola Caroline.  
           </p>
@@ -45,7 +57,7 @@
           <img class="characterImage" src="images/parentsChrct.jpg">
         </td>
         <td>
-          <h2>Mel y Charlie Jones</h2>
+          <h2 id="parents">Mel y Charlie Jones</h2>
           <p>
             Son los padres de Coraline, trabajan como editores de una revista de jardinería por lo que no prestan suficiente atención a Coraline, apesar de su trabajo no se apasionan por la jardinería y siempre se les ve un aire cansancio y mal humor.
           </p>
@@ -53,7 +65,7 @@
       </tr>
       <tr>
         <td>
-          <h2>El gato</h2>
+          <h2 id="cat">El gato</h2>
           <p>
             Es un gato negro que vive en Pink Palace, es sarcastico e irónico y pretende ser un animal salvaje. Es un personaje muy importante que a primera vista no es mas que un gato normal pero es el único que es capaz de ir al Otro Mundo, donde puede hablar. Al encontrar a Coraline en el Otro Mundo le dice: "No, yo no soy el otro nada, ¡yo soy yo!" y ayuda a Coraline a derrotar a la Otra Mamá. Es capaz de aparecer y desaparecer instantaneamente.
           </p>
@@ -68,7 +80,7 @@
           <img class="characterImage" src="images/wybieChrct.png">
         </td>
         <td>
-          <h2>Wyborn Lovat</h2>
+          <h2 id="wybie">Wyborn Lovat</h2>
           <p>
             Mejor conocido como Wybie, es el nieto de la dueña del Palacio Rosa. Es un niño ansioso y extraño, es aventurero y le gustan las cosas extrañas, va en bicicleta y a veces usa cascos extraños.
           </p>
@@ -76,7 +88,7 @@
       </tr>
       <tr>
         <td>
-          <h2>Señor Bobinski</h2>
+          <h2 id="bobinski">Señor Bobinski</h2>
           <p>
             Sergei Alexander Bobinsky, es ruso, tiene 55 años y es vecino de Coraline. Es muy excentrico, generoso y amable, aunque la gente no lo percibe así, dice tener un circo de ratones amaestrados por lo que Coraline piensa que está loco. En el Otro Mundo su show de ratones es un espectáculo maravilloso.
           </p>
@@ -91,7 +103,7 @@
           <img class="characterImage" src="images/april_miriamChrct.png">
         </td>
         <td>
-          <h2>April Spink y Miriam Forcible</h2>
+          <h2 id="spinkForcible">April Spink y Miriam Forcible</h2>
           <p>
             Son vecinas de la familia Jones, April era bailarina y Miriam actriz, las dos se encuentran retiradas, leen la suerte y saben algo de magia, al igual que el señor Bobinski en el Otro mundo presentan un espctacular show de canto, danza y acrobacia.
           </p>
@@ -99,7 +111,7 @@
       </tr>
       <tr>
         <td>
-          <h2>La Otra Mamá</h2>
+          <h2 id="otherMom">La Otra Mamá</h2>
           <p>
             Es una entidad misteriosa que creó el Otro Mundo con el fin de atrapar niños que no están conformes con su vida y así robar su alma, al igual que todos los personajes del Otro Mundo tiene ojos de botón. Al  principio es muy cariñosa con Coraline pero luego de no obtener su cometido se vuelve agresivay busca atacarla.
           </p>
