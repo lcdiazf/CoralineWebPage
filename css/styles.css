@@ -154,6 +154,13 @@ a:link{
 
 .twoColumnsContent{
     margin: 1.5% 10% 0 10%;
+    padding-bottom: 10vh;
+    /*justify-content: center;*/
+    /*background-color: #f0f; */
+}
+
+.twoColumnsContentNopadding{
+    padding-bottom: 0;
     /*justify-content: center;*/
     /*background-color: #f0f; */
 }
