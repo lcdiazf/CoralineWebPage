@@ -4,6 +4,10 @@
     font-family: Coraline font;
     src: url('../fonts/CoralineCat.ttf');
 }
+@font-face {
+    font-family: GrandCru;
+    src: url('../fonts/GrandCru-LightS.otf');
+}
 
 body, html{
     margin: 0;
@@ -16,7 +20,17 @@ body {
     background-color: #a5d3f7;
 }
 
-.indexHeader{
+p{
+    font-family: 'GrandCru';
+    text-align: justify;
+    font-size: 2.5vh;
+}
+
+html p{
+    margin: 5% 10% auto 10%;
+}
+
+.header{
     display:flex;
     flex-direction: row;
     height: 20%;
@@ -25,8 +39,7 @@ body {
 
 .headerImage{
     height: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 3%;
     margin-right: 10%;
 }
 
@@ -47,7 +60,6 @@ body {
     display:flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 5vh;
 }
 .leftImage{
     align-self: center;
@@ -90,7 +102,11 @@ a:link{
     height: 60%;
     margin: 0;
     margin-top: 1%;
-    margin-left: 2.5%; 
+    padding: 1% 0% 0% 2%;
+    /*margin-left: 2.5%;*/
+    background: rgb(135,196,247);
+    background: linear-gradient(0deg, rgba(135,196,247,1) 0%, rgba(137,197,247,1) 20%, rgba(165,211,247,1) 80%);
+    border-radius: 20px;
 }
 
 .contentMenuNav{
@@ -120,6 +136,7 @@ a:link{
 
 .contentButton:hover{
     background-color: #97C0E3;
+    color: #97C0E3;
 }
 .contentFinalButton{
     border-right: 1px solid #000;
@@ -128,7 +145,44 @@ a:link{
 .contentSelectedButton{
     border-bottom:1px solid #000;
     background-color: #87c4f7;
+    color: #87c4f7;
 }
-a>img{
+
+.contentButton img{
     height: 90%;
+}
+
+.twoColumnsContent{
+    margin: 1.5% 10% 0 10%;
+    /*justify-content: center;*/
+    /*background-color: #f0f; */
+}
+
+.twoColumnsContent td{
+    text-align: center;
+    vertical-align: top;
+    padding-top: 1%;
+    width: 50%;
+    /*background-color: #00f*/
+}
+
+.twoColumnsContent p{
+    width: 85%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentImage{
+    width: 85%;
+    border-radius: 10px;
+}
+.characterImage{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.sceneImage{
+    width: 80%;
+    border-radius: 10px;
 }

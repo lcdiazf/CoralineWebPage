@@ -2,37 +2,96 @@
 <!-- documento de ejemplo de reorganización de elementos y cambio de propiedades según el ancho de la pantalla del disposititvo de consulta  - realizado por el profesor Carlos Delgado para el curso Gráfica interactiva de la Universidad Nacional de Colombia-->
 <html>
 <head>
-<meta charset="UTF-8">
-<meta lang="es">
-<title>Actividades</title>
-<link href="css/estilos.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta lang="es">
+  <title>Actividades</title>
+  <link href="css/estilos.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 
 <body>
-    <div class="indexHeader">
-      <div class="headerMenu">
-        <h1 class="title">Actividades</h1>
-        <nav class="contentMenuNav"><!-- la etiqueta <nav> agrupa los elementos del menu de navegación -->
-						<a class="contentButton" href="index.html" target="_self">
-							<img src="images/home.svg"></a>
-            <a class="contentButton" href="PinkPalace.html" target="_self">Pink Palace Apartments</a>
-            <a class="contentButton" href="Characters.html" target="_self">Personajes</a>
-            <a class="contentButton contentSelectedButton" href="Activities.html" target="_self">Actividades</a>
-            <a class="contentButton contentFinalButton" href="Information.html" target="_self">Información</a>
-            <!-- cada botón tiene el mismo estilo botonMenu -->
-          </nav>
-      </div>
+  <div class="header">
+    <div class="headerMenu">
+      <h1 class="title">Actividades</h1>
+      <nav class="contentMenuNav"><!-- la etiqueta <nav> agrupa los elementos del menu de navegación -->
+        <a class="contentButton" href="index.html" target="_self">
+         <img src="images/home.svg"></a>
+         <a class="contentButton" href="PinkPalace.html" target="_self">Pink Palace Apartments</a>
+         <a class="contentButton" href="Characters.html" target="_self">Personajes</a>
+         <a class="contentButton contentSelectedButton" href="Activities.html" target="_self">Actividades</a>
+         <a class="contentButton" href="Story.html" target="_self">Historia</a>
+         <a class="contentButton contentFinalButton" href="Information.html" target="_self">Información</a>
+         <!-- cada botón tiene el mismo estilo botonMenu -->
+       </nav>
+     </div>
 
-      <img class="headerImage" src="images/Coraline.svg"></div>
+     <img class="headerImage" src="images/Coraline.svg"></div>
 
-      <div class="indexContent">
-        <div class="indexLeftContent">
-          
-          <img class="leftImage"  src="images/cat.png">
-        </div>
-          <img class="rightImage" src="images/coralinePic.png">
-      </div>
+     <table class="twoColumnsContent">
+      <tr>
+        <td colspan="2">
+          <h2>Edición del catálogo de jardineria</h2>
+          <p>
+            Pink Palace es el lugar de trabajo del Señor y la Señora Jones, ellos están todo el día escribiendo en sus computadores.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="characterImage" src="images/editor1.png">
+        </td>
+        <td>
+          <img class="characterImage" src="images/editor2.png">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img class="characterImage" src="images/magic.png">
+        </td>
+        <td>
+          <h2>Lectura de la suerte y magia en general</h2>
+          <p>
+            Las señoras Spink y Forcible tiene una gran cantidad de objetos mágicos en su peprturbador sótano, donde lee la suerte de Coraline y le advierten de un gran peligro.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Exploración</h2>
+          <p>
+            Coraline y Wybie siempre está explorando, Coraline en su aventura conoce a todos los personajes y además descubre un mundo mágico, llamado el Otro Mundo. Donde todo está a su gusto, sus padres la consienten y dan toda la atención que ella desea. El Otro Papá le hace un jardín con su cara y la  Otra Mamá le hace unos platillos deliciosos. Por otro lado Wybie se dedica a buscar cosas desagradables.
+          </p>
+          <img class="characterImage" src="images/exploration1.png">
+        </td>
+        <th>
+          <img class="characterImage" src="images/exploration2.png">
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <img class="characterImage" src="images/circus.png">
+        </td>
+        <td>
+          <h2>Show de ratones en el Otro Mundo</h2>
+          <p>
+            En el mundo real es cuestionable la existencia del circo de ratones del Señor Bobinski pero en el Otro Mundo, el Otro Señor Bobinski hace un espectaculo esplendido, con muchos ratones coordinados y efectos especiales que sorprenden a Coraline y al Otro Wybie.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Performance de la Otra Spink y la Otra Forcible</h2>
+          <p>
+            Las señoras Spink y Forcible del Otro Mundo ofrecen a Coraline un show de baile, danza y acrobacia, donde muestran su increible destreza y forma física. El show tiene como público a todos los perro que han tenido en el mundo real.
+          </p>
+        </td>
+        <td>
+          <img class="characterImage" src="images/performance.png">
+        </td>
+      </tr>
+    </table>
   </body>
 
-</html>
+  </html>
