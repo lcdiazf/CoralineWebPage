@@ -238,3 +238,84 @@ a:link{
     margin-left: 15%;
     padding-bottom: 15vh;
 }
+
+#btn-menu{
+    display: none;
+    background-color: #fff;
+}
+
+label img{
+    display: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    body{
+        /*background-color: #6f3;*/
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        /*background-color: #ff0f0f;*/
+    }
+    .header{
+        justify-content: space-around;
+        align-items: center;
+        /*background-color: #f0f;*/
+    }
+    .header *{
+        margin: 0;
+        padding: 0;
+        /*background-color: #0ff;*/
+    }
+    .contentMenuNav{
+        background: rgba(0.5, 0.5, 1, 0.2);
+        display: flex;
+        position: fixed;
+        z-index: 30;
+        height: 50vh;
+        width: 30vw;
+        padding: 2vw 3vw;
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-left: -250vw;
+        border-radius: 2vW;
+        transition: margin-left 0.5s;
+
+    }
+
+    #btn-menu:checked ~ * .contentMenuNav{
+        margin-left: -15vw;
+        /*background-color: #fff;*/
+    }
+
+    .contentButton{
+        background-color: #90b8d9;
+        border: none;
+        width: 100%;
+        margin: 2%;
+        border-radius: 1vw;
+    }
+    .contentButton img{
+        height: 8vw;
+    }
+    label img{
+        height: 8vw;
+        width: auto;
+        max-height: 2%;
+        display: flex;
+        /*background-color: #f00;*/
+    }
+    .title, .headerMenu{
+        font-size: min(4vw,5vh);
+        width: 45vw;
+        height: auto;
+        max-height: 98vh;
+    }
+    .headerImage{
+        width: 25vw;
+        /*margin-right: 2vw;*/
+    }
+}
