@@ -152,40 +152,40 @@ a:link{
     height: 90%;
 }
 
-.twoColumnsContent{
-    margin: 1.5% 10% 0 10%;
-    padding-bottom: 10vh;
-    /*justify-content: center;*/
-    /*background-color: #f0f; */
+.contentBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 2% 10%;
+    /*background-color: #f1f;*/
 }
 
-.twoColumnsContentNopadding{
-    padding-bottom: 0;
-    /*justify-content: center;*/
-    /*background-color: #f0f; */
+.contentBox > *{
+    width: 48%;
+    /*background-color: #162;*/
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
 }
 
-.twoColumnsContent td{
-    text-align: center;
-    vertical-align: top;
-    padding-top: 1%;
-    width: 50%;
-    /*background-color: #00f*/
+.contentBox img{
+    border-radius: 0.5vw;
 }
 
-.twoColumnsContent p{
-    width: 85%;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+.contentBox > div{
+    border: solid;
+    padding: 1%;
 }
 
-.contentImage{
-    width: 85%;
-    border-radius: 10px;
+.centerFlex{
+    justify-content: space-around;
 }
+
 .characterImage{
-    width: 60%;
+    width: 39%;
     border-radius: 10px;
 }
 
@@ -233,10 +233,7 @@ a:link{
 }
 
 .references{
-    text-align: left;
-    font-size: 2.5vh;
-    margin-left: 15%;
-    padding-bottom: 15vh;
+    width: 44%;
 }
 
 #btn-menu{
@@ -253,6 +250,16 @@ label img{
 @media only screen and (max-width: 1200px) {
     body{
         /*background-color: #6f3;*/
+    }
+    .title{
+        font-size: 2.7vw;
+        height: auto;
+    }
+    .headerImage{
+        /*background-color: #f1f;*/
+    }
+    .contentButton{
+        font-size: min(2vh,1vw);
     }
 }
 
@@ -293,6 +300,7 @@ label img{
 
     .contentButton{
         background-color: #90b8d9;
+        font-size: 2vh;
         border: none;
         width: 100%;
         margin: 2%;
@@ -317,5 +325,18 @@ label img{
     .headerImage{
         width: 25vw;
         /*margin-right: 2vw;*/
+    }
+
+    .contentBox *{
+        width: 100%;
+        /*background-color: #162;*/
+        margin: 0;
+        padding: 0;
+    }
+    .contentBox>p{
+        order: -1;
+    }
+    .contentBox>h2{
+        order: -2;
     }
 }
