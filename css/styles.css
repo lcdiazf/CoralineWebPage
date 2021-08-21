@@ -253,12 +253,10 @@ label img{
     flex-direction: row;
     width: 85%;
     margin-left: 10%;
-    border: 3px solid blue;
 }
 
 .mapContainer{
     width: 70%; 
-    border: 3px solid green;
 }
 
 .mapImage{
@@ -272,11 +270,34 @@ label img{
     width: 30%;
     z-index: 15;
     margin-right: auto;
-    border: 3px solid red;   
 }
 
-.infoCard > img{
+#infoImage{
     width: 100%;
+    border-radius: 10px;
+}
+
+#infoMapText{
+    font-family: 'Coraline font';
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.helpIc{
+    position: absolute;
+    width: 6vh;
+    top: 20%;
+    left: 10%;
+    z-index: 15;
+    -webkit-filter: drop-shadow(2px 2px 2px #222 );
+    filter: drop-shadow(2px 2px 2px #222);
+}
+.helpIc:hover{
+    position: absolute;
+    width: 6vh;
+    top: 19.9%;
+    left: 10.1%;
+    z-index: 15;
 }
 
 @media only screen and (max-width: 1200px) {
