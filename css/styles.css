@@ -44,8 +44,9 @@ html p{
 }
 
 .indexContent{
-    display:flex;
+    display: flex;
     height: 80%;
+    margin-top: -5%;
 }
 
 .indexLeftContent{
@@ -245,6 +246,37 @@ label img{
     display: none;
     width: 100%;
     cursor: pointer;
+}
+
+.mapContent{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-left: 10%;
+    border: 3px solid blue;
+}
+
+.mapContainer{
+    width: 70%; 
+    border: 3px solid green;
+}
+
+.mapImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    z-index: 15;
+    margin-right: auto;
+    border: 3px solid red;   
+}
+
+.infoCard > img{
+    width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
